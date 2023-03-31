@@ -1,16 +1,18 @@
 import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
+import Header from "./components/Header";
 import ForgotPassword from "./pages/Auth/ForgotPassword/Index";
 import SignIn from "./pages/Auth/SignIn/Index";
 import SignUp from "./pages/Auth/SignUp/Index";
 import Home from "./pages/Home/Index";
 import { Offers } from "./pages/Offers/Index";
-import Profile from "./pages/Profile";
+import Profile from "./pages/Profile/Index";
 
 
 function App() {
   return (
     <>
        <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
